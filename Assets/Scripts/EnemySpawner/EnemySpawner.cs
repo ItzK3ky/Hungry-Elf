@@ -9,13 +9,15 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Prefabs")]
     [SerializeField] private List<GameObject> Enemys;
+    [SerializeField] private List<GameObject> BiggerEnemys;
 
     [Header("Attributes")]
     [SerializeField] private float spawnChance;
+    [SerializeField] private float biggerEnemySpawnFactor;
 
     void FixedUpdate()
     {
-        if(spawnChance * difficulty.Value >= Random.Range(1, 100))
+        if(spawnChance/10 * difficulty.Value >= Random.Range(1, 100))
             SpawnEnemy();
     }
 
@@ -26,6 +28,13 @@ public class EnemySpawner : MonoBehaviour
 
         Vector3 spawnPosition = new Vector3(spawnPositionX, spawnPositionY, 0);
 
-        Instantiate(Enemys[0], spawnPosition, Quaternion.Euler(0, 0 , 0));
+        if(Mathf.Clamp(biggerEnemySpawnFactor * difficulty.Value, 0, 40) >= Random.Range(1, 100))
+        {
+            Instantiate(BiggerEnemys[0], spawnPosition, Quaternion.Euler(0, 0, 0));
+        }
+        else
+        {
+            Instantiate(Enemys[0], spawnPosition, Quaternion.Euler(0, 0 , 0));
+        }
     }
 }

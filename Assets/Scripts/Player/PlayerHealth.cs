@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private float health = 100f;
+    [SerializeField] private float health = 100f;
 
     void Start()
     {
@@ -24,9 +24,9 @@ public class PlayerHealth : MonoBehaviour
     }
 
     //Only called by event
-    public void DamagePlayer(Component sender, object data)
+    public void DamagePlayer(Component sender, List<object> data)
     {
-        health -= (float)data;
+        health -= (float)data[0];
 
         if(health <= 0)
         {

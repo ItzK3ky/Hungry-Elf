@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private float movementSpeed;
+    [Header("Attributes")]
     [SerializeField] private float damage;
+    [SerializeField] private float health;
+    [SerializeField] private float movementSpeed;
 
     [Header("GameEvents")]
     [SerializeField] private GameEvent damagePlayerEvent;
 
-    private GameObject player;
+    private Transform player;
 
     private Rigidbody2D rb;
 
@@ -18,20 +20,29 @@ public class Enemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void FixedUpdate()
     {
         if(player != null)
-            rb.MovePosition(Vector2.MoveTowards(transform.position, player.transform.position, movementSpeed * Time.fixedDeltaTime));
+            rb.MovePosition(Vector2.MoveTowards(transform.position, player.position, movementSpeed * Time.fixedDeltaTime));
+
+        Debug.Log("health " + health);
     }
 
-    public void KillEnemy(Component sender, object data)
+    private void KillEnemy()
     {
-        if((GameObject) data == gameObject)
+        Destroy(gameObject);
+    }
+
+    public void dealDamage(Component sender, List<object> data)
+    {
+        if ((GameObject) data[0] == gameObject)
         {
-            Destroy(gameObject);
+            health -= (float)data[1];
+            if (health <= 0)
+                KillEnemy();
         }
     }
 
@@ -39,9 +50,12 @@ public class Enemy : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            damagePlayerEvent.Raise(this, damage);
+            List<object> data = new List<object>();
+            data.Add(damage);
 
-            KillEnemy(this, gameObject);
+            damagePlayerEvent.Raise(this, data);
+
+            KillEnemy();
         }
     }
 }

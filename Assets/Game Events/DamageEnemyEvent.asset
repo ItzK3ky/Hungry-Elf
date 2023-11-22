@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc5f98c37298b0a4088e0f8458cd4fe3, type: 3}
-  m_Name: KillEnemy
+  m_Name: DamageEnemyEvent
   m_EditorClassIdentifier: 
   activeEvent: 1
   passiveEvent: 0
-  dataDescription: data = Enemy to be killed (as GameObject)
+  dataDescription: data = enemy (gameobject), damage
   listeners: []

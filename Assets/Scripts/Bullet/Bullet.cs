@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    [Header("Attributes")]
+    [SerializeField] private float damage;
+
     [Header("GameEvents")]
-    [SerializeField] private GameEvent killEnemyEvent;
+    [SerializeField] private GameEvent damageEnemyEvent;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            killEnemyEvent.Raise(this, collision.gameObject);
-            Destroy(gameObject);
+            List<object> data = new List<object>();
+            data.Add(collision.gameObject);
+            data.Add(damage);
+
+            damageEnemyEvent.Raise(this, data);
+
+            Destroy(gameObject, 0.01f);
         }
     }
 }

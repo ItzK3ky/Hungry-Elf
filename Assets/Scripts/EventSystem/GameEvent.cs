@@ -11,7 +11,7 @@ public class GameEvent : ScriptableObject
 
 	public List<GameEventListener> listeners = new List<GameEventListener>();
 
-	public void Raise(Component sender, object data)
+	public void Raise(Component sender, List<object> data)
 	{
 		for(int i = 0; i < listeners.Count; i++)
 		{
