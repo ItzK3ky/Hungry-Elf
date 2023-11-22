@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6127c77722bd62468cf5bd5293dc3e8, type: 3}
-  m_Name: Difficulty
+  m_Script: {fileID: 11500000, guid: cc5f98c37298b0a4088e0f8458cd4fe3, type: 3}
+  m_Name: KillEnemy
   m_EditorClassIdentifier: 
-  initialValue: 1
+  activeEvent: 1
+  passiveEvent: 0
+  dataDescription: data = Enemy to be killed (as GameObject)
+  listeners: []

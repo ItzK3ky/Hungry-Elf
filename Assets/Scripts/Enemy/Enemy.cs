@@ -27,10 +27,12 @@ public class Enemy : MonoBehaviour
             rb.MovePosition(Vector2.MoveTowards(transform.position, player.transform.position, movementSpeed * Time.fixedDeltaTime));
     }
 
-    private void KillEnemy()
+    public void KillEnemy(Component sender, object data)
     {
-        Debug.Log("Enemy died");
-        Destroy(gameObject);
+        if((GameObject) data == gameObject)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -39,7 +41,7 @@ public class Enemy : MonoBehaviour
         {
             damagePlayerEvent.Raise(this, damage);
 
-            KillEnemy();
+            KillEnemy(this, gameObject);
         }
     }
 }

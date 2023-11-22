@@ -13,12 +13,11 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        difficulty.SetAmount(0f);
+        difficulty.ResetAmount();
     }
 
     void FixedUpdate()
     {
-        Debug.Log(difficulty.Value);
         difficulty.ChangeAmountBy(difficultyIncreaseSpeed/50);
     }
 }

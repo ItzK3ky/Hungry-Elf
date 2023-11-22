@@ -6,6 +6,7 @@ using UnityEngine;
 public class FloatSO : ScriptableObject
 {
 	private float value;
+	[SerializeField] private float initialValue;
 
 	public float Value { get => value; }
 
@@ -17,5 +18,10 @@ public class FloatSO : ScriptableObject
 	public void SetAmount(float newAmount)
 	{
 		value = newAmount;
+	}
+
+	public void ResetAmount()
+	{
+		value = initialValue;
 	}
 }
