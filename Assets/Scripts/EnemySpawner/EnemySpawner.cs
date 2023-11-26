@@ -6,6 +6,8 @@ public class EnemySpawner : MonoBehaviour
 {
     [Header("Global Variables")]
     [SerializeField] private FloatSO difficulty;
+    [SerializeField] private FloatSO maxEnemyCap;
+    [SerializeField] private FloatSO amountOfEnemys;
 
     [Header("Prefabs")]
     [SerializeField] private List<GameObject> Enemys;
@@ -17,8 +19,14 @@ public class EnemySpawner : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(spawnChance/10 * difficulty.Value >= Random.Range(1, 100))
-            SpawnEnemy();
+        Debug.Log("lool");
+        if (amountOfEnemys.Value < maxEnemyCap.Value)
+        {
+            Debug.Log("looadaadal");
+
+            if (spawnChance / 10 * difficulty.Value >= Random.Range(1, 100))
+                SpawnEnemy();
+        }
     }
 
     private void SpawnEnemy()
@@ -36,5 +44,7 @@ public class EnemySpawner : MonoBehaviour
         {
             Instantiate(Enemys[0], spawnPosition, Quaternion.Euler(0, 0 , 0));
         }
+
+        amountOfEnemys.ChangeAmountBy(1);
     }
 }

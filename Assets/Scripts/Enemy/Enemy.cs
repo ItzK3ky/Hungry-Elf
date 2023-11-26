@@ -9,6 +9,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float health;
     [SerializeField] private float movementSpeed;
 
+    [Header("Global Variables")]
+    [SerializeField] private FloatSO amountOfEnemys;
+
     [Header("GameEvents")]
     [SerializeField] private GameEvent damagePlayerEvent;
 
@@ -27,12 +30,11 @@ public class Enemy : MonoBehaviour
     {
         if(player != null)
             rb.MovePosition(Vector2.MoveTowards(transform.position, player.position, movementSpeed * Time.fixedDeltaTime));
-
-        Debug.Log("health " + health);
     }
 
     private void KillEnemy()
     {
+        amountOfEnemys.ChangeAmountBy(-1);
         Destroy(gameObject);
     }
 
