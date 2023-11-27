@@ -19,11 +19,8 @@ public class EnemySpawner : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log("lool");
         if (amountOfEnemys.Value < maxEnemyCap.Value)
         {
-            Debug.Log("looadaadal");
-
             if (spawnChance / 10 * difficulty.Value >= Random.Range(1, 100))
                 SpawnEnemy();
         }

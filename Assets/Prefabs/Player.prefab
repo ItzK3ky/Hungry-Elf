@@ -227,8 +227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ff0f6506adc7249a5cc709a53c9936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 1500
-  bulletPrefab: {fileID: 1669616273876844685, guid: c1cc15799bafe0348a9e9e8c715178d7, type: 3}
 --- !u!1 &402891290624932913
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,11 +272,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: {fileID: 11400000, guid: ca3cb68398d7b664db17487b57673cd4, type: 2}
+  maxEnemyCap: {fileID: 11400000, guid: 51e532afd983169428651e6b834c0577, type: 2}
+  amountOfEnemys: {fileID: 11400000, guid: 69b2cc5d66d3cd7449b31f21b7476df5, type: 2}
   Enemys:
   - {fileID: 7112225349240715007, guid: ff04635f77b89e6499cce208cd1bac5a, type: 3}
   BiggerEnemys:
   - {fileID: 7112225349240715007, guid: 56ee7be2f10e400439d154ae7dd86d1b, type: 3}
-  spawnChance: 20
+  spawnChance: 10
   biggerEnemySpawnFactor: 5
 --- !u!1 &417348570138283767
 GameObject:
@@ -325,11 +325,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: {fileID: 11400000, guid: ca3cb68398d7b664db17487b57673cd4, type: 2}
+  maxEnemyCap: {fileID: 11400000, guid: 51e532afd983169428651e6b834c0577, type: 2}
+  amountOfEnemys: {fileID: 11400000, guid: 69b2cc5d66d3cd7449b31f21b7476df5, type: 2}
   Enemys:
   - {fileID: 7112225349240715007, guid: ff04635f77b89e6499cce208cd1bac5a, type: 3}
   BiggerEnemys:
   - {fileID: 7112225349240715007, guid: 56ee7be2f10e400439d154ae7dd86d1b, type: 3}
-  spawnChance: 20
+  spawnChance: 10
   biggerEnemySpawnFactor: 5
 --- !u!1 &3130544070264322856
 GameObject:
@@ -376,11 +378,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: {fileID: 11400000, guid: ca3cb68398d7b664db17487b57673cd4, type: 2}
+  maxEnemyCap: {fileID: 11400000, guid: 51e532afd983169428651e6b834c0577, type: 2}
+  amountOfEnemys: {fileID: 11400000, guid: 69b2cc5d66d3cd7449b31f21b7476df5, type: 2}
   Enemys:
   - {fileID: 7112225349240715007, guid: ff04635f77b89e6499cce208cd1bac5a, type: 3}
   BiggerEnemys:
   - {fileID: 7112225349240715007, guid: 56ee7be2f10e400439d154ae7dd86d1b, type: 3}
-  spawnChance: 20
+  spawnChance: 10
   biggerEnemySpawnFactor: 5
 --- !u!1 &3546147406932318211
 GameObject:
@@ -427,11 +431,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: {fileID: 11400000, guid: ca3cb68398d7b664db17487b57673cd4, type: 2}
+  maxEnemyCap: {fileID: 11400000, guid: 51e532afd983169428651e6b834c0577, type: 2}
+  amountOfEnemys: {fileID: 11400000, guid: 69b2cc5d66d3cd7449b31f21b7476df5, type: 2}
   Enemys:
   - {fileID: 7112225349240715007, guid: ff04635f77b89e6499cce208cd1bac5a, type: 3}
   BiggerEnemys:
   - {fileID: 7112225349240715007, guid: 56ee7be2f10e400439d154ae7dd86d1b, type: 3}
-  spawnChance: 20
+  spawnChance: 10
   biggerEnemySpawnFactor: 5
 --- !u!1 &4415849372063899678
 GameObject:
@@ -478,11 +484,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: {fileID: 11400000, guid: ca3cb68398d7b664db17487b57673cd4, type: 2}
+  maxEnemyCap: {fileID: 11400000, guid: 51e532afd983169428651e6b834c0577, type: 2}
+  amountOfEnemys: {fileID: 11400000, guid: 69b2cc5d66d3cd7449b31f21b7476df5, type: 2}
   Enemys:
   - {fileID: 7112225349240715007, guid: ff04635f77b89e6499cce208cd1bac5a, type: 3}
   BiggerEnemys:
   - {fileID: 7112225349240715007, guid: 56ee7be2f10e400439d154ae7dd86d1b, type: 3}
-  spawnChance: 20
+  spawnChance: 10
   biggerEnemySpawnFactor: 5
 --- !u!1 &4714953456835795338
 GameObject:
@@ -529,11 +537,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: {fileID: 11400000, guid: ca3cb68398d7b664db17487b57673cd4, type: 2}
+  maxEnemyCap: {fileID: 11400000, guid: 51e532afd983169428651e6b834c0577, type: 2}
+  amountOfEnemys: {fileID: 11400000, guid: 69b2cc5d66d3cd7449b31f21b7476df5, type: 2}
   Enemys:
   - {fileID: 7112225349240715007, guid: ff04635f77b89e6499cce208cd1bac5a, type: 3}
   BiggerEnemys:
   - {fileID: 7112225349240715007, guid: 56ee7be2f10e400439d154ae7dd86d1b, type: 3}
-  spawnChance: 20
+  spawnChance: 10
   biggerEnemySpawnFactor: 5
 --- !u!1 &5474252864787614349
 GameObject:
@@ -580,11 +590,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: {fileID: 11400000, guid: ca3cb68398d7b664db17487b57673cd4, type: 2}
+  maxEnemyCap: {fileID: 11400000, guid: 51e532afd983169428651e6b834c0577, type: 2}
+  amountOfEnemys: {fileID: 11400000, guid: 69b2cc5d66d3cd7449b31f21b7476df5, type: 2}
   Enemys:
   - {fileID: 7112225349240715007, guid: ff04635f77b89e6499cce208cd1bac5a, type: 3}
   BiggerEnemys:
   - {fileID: 7112225349240715007, guid: 56ee7be2f10e400439d154ae7dd86d1b, type: 3}
-  spawnChance: 20
+  spawnChance: 10
   biggerEnemySpawnFactor: 5
 --- !u!1 &6782977367098752317
 GameObject:
@@ -631,93 +643,110 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: {fileID: 11400000, guid: ca3cb68398d7b664db17487b57673cd4, type: 2}
+  maxEnemyCap: {fileID: 11400000, guid: 51e532afd983169428651e6b834c0577, type: 2}
+  amountOfEnemys: {fileID: 11400000, guid: 69b2cc5d66d3cd7449b31f21b7476df5, type: 2}
   Enemys:
   - {fileID: 7112225349240715007, guid: ff04635f77b89e6499cce208cd1bac5a, type: 3}
   BiggerEnemys:
   - {fileID: 7112225349240715007, guid: 56ee7be2f10e400439d154ae7dd86d1b, type: 3}
-  spawnChance: 20
+  spawnChance: 10
   biggerEnemySpawnFactor: 5
---- !u!1 &8109519768271906619
-GameObject:
+--- !u!1001 &4299156508927553652
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1510032872226847941}
-  - component: {fileID: 3636757668331422111}
-  m_Layer: 0
-  m_Name: Weapon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1510032872226847941
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8109519768271906619}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.70710677, w: 0.7071068}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.5, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2310917105411484341}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!212 &3636757668331422111
-SpriteRenderer:
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2310917105411484341}
+    m_Modifications:
+    - target: {fileID: 707619044630327787, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_Color.b
+      value: 0.37254906
+      objectReference: {fileID: 0}
+    - target: {fileID: 707619044630327787, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 707619044630327787, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5814433
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412913730849148081, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412913730849148081, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412913730849148081, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412913730849148081, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412913730849148081, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412913730849148081, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412913730849148081, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412913730849148081, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412913730849148081, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412913730849148081, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414278183903401807, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      propertyPath: m_Name
+      value: Weapon
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -4980906390442438533, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5414278183903401807, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8393185121660666567}
+  m_SourcePrefab: {fileID: 100100000, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+--- !u!4 &1510032872226847941 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3412913730849148081, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+  m_PrefabInstance: {fileID: 4299156508927553652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8109519768271906619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5414278183903401807, guid: c53a08841b8b3fe43a3e4adee7d0cc88, type: 3}
+  m_PrefabInstance: {fileID: 4299156508927553652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8393185121660666567
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8109519768271906619}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.95540905, b: 0.3726415, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4531c143f9aa08e41bac14d1bfcbbda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  bulletSpeed: 2500
+  fireCooldownInSec: 0.5
+  bulletPrefab: {fileID: 1669616273876844685, guid: c1cc15799bafe0348a9e9e8c715178d7, type: 3}

@@ -26,7 +26,6 @@ public class Weapon : MonoBehaviour
     {
         if(cooldownTimer > 0)
         {
-            Debug.Log("hosenmann");
             cooldownTimer -= 1 * Time.fixedDeltaTime;
         }
     }

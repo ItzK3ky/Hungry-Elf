@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1110458015978023590}
   - component: {fileID: 1085640356693121680}
   - component: {fileID: 3691217690890411103}
-  - component: {fileID: -7117419735226684557}
-  m_Layer: 0
-  m_Name: Bullet
-  m_TagString: Untagged
+  - component: {fileID: -1271325766880038997}
+  m_Layer: 6
+  m_Name: GrenadeBullet
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,8 +30,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 8
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -144,12 +144,12 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &-7117419735226684557
+--- !u!114 &-1271325766880038997
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,8 +158,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1669616273876844685}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df74cf86d24090d4893600d4d7ac35fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5482fcb7adeac0b47ac62436d285918d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  damageEnemyEvent: {fileID: 11400000, guid: 7c894c80c2b1975418174ea694314259, type: 2}
+  timeUntilExplosionInSec: 2
+  bulletPrefab: {fileID: 1669616273876844685, guid: c1cc15799bafe0348a9e9e8c715178d7, type: 3}
