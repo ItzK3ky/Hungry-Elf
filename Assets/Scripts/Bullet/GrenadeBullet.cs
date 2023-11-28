@@ -27,9 +27,7 @@ public class GrenadeBullet : MonoBehaviour
 
     private IEnumerator Explode()
     {
-        Debug.Log("niggege");
         yield return new WaitForSeconds(timeUntilExplosionInSec);
-        Debug.Log("hosenbold");
 
         Quaternion rotation1 = transform.rotation;
         Quaternion rotation2 = transform.rotation;

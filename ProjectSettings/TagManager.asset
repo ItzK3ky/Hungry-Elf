@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - EnemySpawner
   - Bullet
+  - Pickupable
+  - Weapon
   layers:
   - Default
   - TransparentFX

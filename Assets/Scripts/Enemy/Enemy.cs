@@ -8,12 +8,17 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float damage;
     [SerializeField] private float health;
     [SerializeField] private float movementSpeed;
+    [Space]
+    [SerializeField, Range(0, 100)] private float dropChance;
 
     [Header("Global Variables")]
     [SerializeField] private FloatSO amountOfEnemys;
 
     [Header("GameEvents")]
     [SerializeField] private GameEvent damagePlayerEvent;
+
+    [Header("Prefabs")]
+    [SerializeField] private GameObject drop;
 
     private Transform player;
 
@@ -33,6 +38,21 @@ public class Enemy : MonoBehaviour
     }
 
     private void KillEnemy()
+    {
+        if (drop != null)
+        {
+            //Drop item
+            if (Random.Range(1, 100) <= dropChance)
+            {
+                Instantiate(drop, transform.position, Quaternion.identity, null);
+            }
+        }
+
+        amountOfEnemys.ChangeAmountBy(-1);
+        Destroy(gameObject);
+    }
+
+    private void Die()
     {
         amountOfEnemys.ChangeAmountBy(-1);
         Destroy(gameObject);
